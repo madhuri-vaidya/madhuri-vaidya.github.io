@@ -1,0 +1,144 @@
+html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    color: #414141;
+    background-color: #ffffff;
+}
+
+#intro-wrapper {
+    font-size: 1.2em;
+    margin-top: 3rem;
+    justify-content: center;
+}
+
+#intro-title-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+
+#intro-image-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#intro-image {
+    border-radius: 5rem;
+    height: 8rem;
+    width: 8rem;
+}
+
+#intro-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    justify-content: center;
+}
+
+#intro-title {
+    color: #111;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+#intro-subtitle {
+    font-size: 1.57rem;
+    color: #999;
+    font-weight: normal;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+#intro-socials {
+	margin-top: 0.25rem;
+	display: flex;
+	grid-gap: 0.5rem;
+    width: 12rem;
+}
+
+.social-link {
+    display: flex;
+	background-color: rgba(0,0,0,.025);
+	transition: all .2s ease-in-out;
+    border-radius: 2.5rem;
+	color: #414141;
+    height: 2.5rem;
+    width: 2.5rem;
+    margin: auto;
+}
+
+.social-link:hover {
+	text-decoration: none;
+	background: #fd6e6e45;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.social-link-text-wrapper {
+	color: #414141;;
+}
+
+.intro-logo {
+    color: #515151; 
+    width: 20px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+}
+
+#website-links {
+    margin-top: 0.25rem;
+	display: flex;
+    justify-content: center;
+    margin: auto;
+	grid-gap: 0.5rem;
+	font-size: 1rem;
+	color: #414141;
+	font-weight: 500;
+}
+
+.link-img {
+    color: #515151; 
+    width: 20px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+}
+
+.site-link {
+    background-color: rgba(0,0,0,.025);
+	border-radius: 5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+	padding: 0.75rem 0.1rem;
+    width: 12rem;
+    color: #414141;
+    text-decoration: none;
+	transition: all .2s ease-in-out;
+}
+
+.site-link:hover {
+	text-decoration: none;
+	background: #fd6e6e45;
+	transform: scale(1.03);
+}
+
+#description {
+    font-size: 1.1em;
+    margin: auto;
+    margin-top: 3rem;
+    justify-content: center;
+    max-width: 70%;
+    text-align: justify;
+}
