@@ -3,10 +3,22 @@
     <head>
         <meta charset="UTF-8">
         <title>Madhuri Vaidya</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./styles_index.css"/>
     </head>
     
     <body>
+        <header id="site-header">
+            <nav id="main-nav">
+                <a href="#about" class="nav-link">About Me</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="contact.html" class="nav-link">Contact Me</a>
+            </nav>
+        </header>
+
         <div id="intro-wrapper">
             <div id="intro-title-wrapper">
                 <div id="intro-image-wrapper">
@@ -36,28 +48,32 @@
             </div>
 
             <div id="website-links">
-                <a href="projects.html" class="site-link" target="_blank" rel="noopener noreferrer" >
-                    <img class="link-img" src="images/shapes.svg">Projects
+                <a href="projects.html" class="site-link" >
+                    <img class="link-img" src="images/shapes.svg" alt="Projects">
+                    <span>Projects</span>
                 </a>
-                <a href="blog.html" class="site-link" target="_blank" rel="noopener noreferrer" >
-                    <img class="link-img" src="images/list-ul.svg">Blog
+                <a href="blog.html" class="site-link" >
+                    <img class="link-img" src="images/list-ul.svg" alt="Blog">
+                    <span>Blog</span>
                 </a>
             </div>
         </div>
 
-        <div id="description">
+        <section id="about">
+            <h2>Who Am I?</h2>
+            <div id="description">
+                <p>Welcome to my little corner of the internet!</p> 
+                
+                <p>I am a Power and Performance engineer with 6+ years of experience shaping the next-gen server CPUs. I analyze how workloads behave and uncover optimization opportunities at both the hardware and software levels.</p>
 
-            <p>Welcome to my little corner of the internet!</p> 
-            
-            <p>I am a Power and Performance engineer with 6+ years of experience shaping the next-gen server CPUs. I analyze how workloads behave and uncover optimization opportunities at both the hardware and software levels.</p>
+                <p>Specializing in benchmarking, workload analysis, and platform tuning, I bring deep expertise in SoC characterization, CPU architecture, and power management — driving performance gains while improving thermal and energy efficiency.</p>
+                
+                <p>I'm deeply interested in how subsystems like cores, cache & memory hierarchies, interconnects, and power management units — interact. Diving into these system-level dynamics helps me diagnose bottlenecks and fine-tune performance across diverse workloads.</p>
 
-            <p>Specializing in benchmarking, workload analysis, and platform tuning, I bring deep expertise in SoC characterization, CPU architecture, and power management — driving performance gains while improving thermal and energy efficiency.</p>
-            
-            <p>I'm deeply interested in how subsystems like cores, cache & memory hierarchies, interconnects, and power management units — interact. Diving into these system-level dynamics helps me diagnose bottlenecks and fine-tune performance across diverse workloads.</p>
+                <p>Skilled in tools like VTune, EMON, and Linux Perf, and fluent in C++, Python, and Bash, I combine hands-on debugging with automation and leadership. I've led teams, mentored engineers, and built tools to streamline benchmarking.</p>
 
-            <p>Skilled in tools like VTune, EMON, and Linux Perf, and fluent in C++, Python, and Bash, I combine hands-on debugging with automation and leadership. I've led teams, mentored engineers, and built tools to streamline benchmarking.</p>
-
-            <p>Let's connect — I'd love to chat!</p>
-        </div>
+                <p>Let's connect — I'd love to chat!</p>
+            </div>
+        </section>
     </body>
 </html>

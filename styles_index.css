@@ -1,19 +1,69 @@
 html {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
-    color: #414141;
-    background-color: #ffffff;
+    color: #212121;
+    background-color: #fafafa;
+}
+
+*, *::before, *::after { box-sizing: inherit; }
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    background: #f8f9fb;
+    color: #2c2c2c;
+    padding-top: 70px;
+}
+
+#site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 58px;
+    background: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+#main-nav {
+    display: flex;
+    gap: 1.2rem;
+    font-weight: 600;
+}
+
+.nav-link {
+    color: #2b2b2b;
+    text-decoration: none;
+    padding: 0.35rem 0.95rem;
+    border-radius: 999px;
+    transition: all 0.2s ease-in-out;
+    font-size: 0.95rem;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    background-color: #e8eff8;
+    color: #0e3c6d;
 }
 
 #intro-wrapper {
     font-size: 1.2em;
-    margin-top: 3rem;
+    margin-top: 1.25rem;
     justify-content: center;
+    max-width: 860px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
 }
 
 #intro-title-wrapper {
@@ -21,6 +71,8 @@ html {
     flex-direction: row;
     margin-bottom: 1rem;
     justify-content: center;
+    gap: 1rem;
+    align-items: center;
 }
 
 #intro-image-wrapper {
@@ -134,11 +186,132 @@ html {
 	transform: scale(1.03);
 }
 
+#about {
+    max-width: 900px;
+    margin: 0 auto 2.4rem;
+    padding: 0 1rem;
+}
+
+#about h2 {
+    margin-top: 1.25rem;
+    margin-bottom: 0.85rem;
+    font-size: 1.75rem;
+    color: #0e2e50;
+    font-weight: 700;
+}
+
 #description {
-    font-size: 1.1em;
-    margin: auto;
-    margin-top: 3rem;
-    justify-content: center;
-    max-width: 70%;
-    text-align: justify;
+    font-size: 1.05rem;
+    margin: 0;
+    margin-top: 0.6rem;
+    max-width: 100%;
+    text-align: left;
+    line-height: 1.7;
+    color: #383838;
+}
+
+#description p {
+    margin-bottom: 0.95rem;
+}
+
+@media (max-width: 840px) {
+    #intro-title-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #intro-text-wrapper {
+        margin-left: 0;
+    }
+
+    #intro-socials {
+        width: auto;
+        justify-content: center;
+    }
+
+    #intro-image {
+        width: 7rem;
+        height: 7rem;
+    }
+
+    body {
+        padding-top: 100px;
+    }
+}
+
+/* Contact page */
+.contact-page {
+    max-width: 760px;
+    margin: 1.25rem auto 3rem;
+    padding: 1rem;
+}
+
+.contact-page h1 {
+    font-size: 1.9rem;
+    margin-bottom: 0.8rem;
+    color: #0d3159;
+}
+
+.contact-page p {
+    font-size: 1rem;
+    color: #424242;
+    margin-bottom: 1.2rem;
+}
+
+.contact-form {
+    background: #ffffff;
+    border: 1px solid #dde3ed;
+    border-radius: 1rem;
+    padding: 1.25rem;
+    box-shadow: 0 8px 16px rgba(19, 48, 82, 0.06);
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-weight: 600;
+    color: #2f3f57;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: 1px solid #ccd4e2;
+    border-radius: 0.65rem;
+    padding: 0.65rem 0.8rem;
+    font-size: 1rem;
+    margin-bottom: 0.95rem;
+    background: #fff;
+}
+
+.contact-form textarea {
+    min-height: 160px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background: #0f4fa0;
+    color: #fff;
+    border: none;
+    border-radius: 0.65rem;
+    padding: 0.72rem 1.15rem;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+.contact-form button:hover {
+    background: #0a3f85;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 1.2rem;
+    color: #0b4fa5;
+    text-decoration: none;
+}
+
+.back-link:hover {
+    text-decoration: underline;
 }
